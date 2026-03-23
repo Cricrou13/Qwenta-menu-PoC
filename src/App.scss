@@ -1,0 +1,38 @@
+// Variables de la charte Qwenta
+$bg-beige: #FFF4E8;
+$primary-green: #8BC7B1;
+$text-dark: #333333;
+$white: #ffffff;
+
+.container {
+  padding: 40px 20px;
+  background-color: $bg-beige;
+  min-height: 100vh;
+  font-family: 'Montserrat', sans-serif;
+  color: $text-dark;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .title {
+    color: $primary-green;
+    font-family: 'Playfair Display', serif; // Optionnel : police de titre
+    margin-bottom: 30px;
+  }
+
+  .dish-form {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 40px;
+
+    input {
+      padding: 12px;
+      border: 1px solid $primary-green;
+      border-radius: 8px;
+      outline: none;
+      transition: border-color 0.3s;
+
+      &:focus {
+        border-color: darken($primary-green, 15%);
+      }
+    }
