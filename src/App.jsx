@@ -11,7 +11,6 @@ function App() {
   // 2. État pour le formulaire
   const [newName, setNewName] = useState("");
   const [newPrice, setNewPrice] = useState("");
-  );
 }
 
 export default App;

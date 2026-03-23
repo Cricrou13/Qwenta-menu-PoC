@@ -24,15 +24,4 @@ $white: #ffffff;
     display: flex;
     gap: 15px;
     margin-bottom: 40px;
-
-    input {
-      padding: 12px;
-      border: 1px solid $primary-green;
-      border-radius: 8px;
-      outline: none;
-      transition: border-color 0.3s;
-
-      &:focus {
-        border-color: darken($primary-green, 15%);
-      }
     }
