@@ -1,27 +1,63 @@
-// Variables de la charte Qwenta
 $bg-beige: #FFF4E8;
 $primary-green: #8BC7B1;
 $text-dark: #333333;
-$white: #ffffff;
 
 .container {
   padding: 40px 20px;
   background-color: $bg-beige;
   min-height: 100vh;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: $text-dark;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  text-align: center;
 
   .title {
     color: $primary-green;
-    font-family: 'Playfair Display', serif; // Optionnel : police de titre
-    margin-bottom: 30px;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
   }
 
-  .dish-form {
+  .form-container {
     display: flex;
     gap: 15px;
+    justify-content: center;
     margin-bottom: 40px;
+
+    .input-field {
+      padding: 12px;
+      border: 2px solid $primary-green;
+      border-radius: 8px;
+      outline: none;
     }
+
+    .add-button {
+      padding: 12px 25px;
+      background-color: $primary-green;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-weight: bold;
+      cursor: pointer;
+      &:hover { background-color: darken($primary-green, 10%); }
+    }
+  }
+
+    }
+  }
+
+  .export-btn {
+    display: block;
+    margin: 40px auto;
+    padding: 15px 40px;
+    background-color: $text-dark;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: transform 0.2s;
+    &:hover { 
+        transform: scale(1.05);
+        background-color: lighten($text-dark, 10%); 
+    }
+  }
+}
